@@ -1,0 +1,15 @@
+bias_categories:
+  - gender
+  - race
+  - age
+  - religion
+  - nationality
+
+toxicity_threshold: 0.7
+confidence_threshold: 0.8
+logging_path: "logs/ethical_genai.log"
+
+models:
+  text_generation: "gpt2"
+  toxicity: "facebook/roberta-hate-speech-dynabench-r4-target"
+  bias: "facebook/bart-large-mnli"
